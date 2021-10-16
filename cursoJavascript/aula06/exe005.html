@@ -1,0 +1,100 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            padding: 10px;
+            background-color: #000;
+            color: #fff;
+            font: normal 15px arial;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em Javascrit</p>
+    <p id="msg">Clique em mim</p>
+
+    <script>
+       
+        var p1 = window.document.getElementsByTagName('p')[1]
+        window.document.write(p1.innerHTML)
+        
+        //p1.style.color = '#00fc00'
+
+        var corpo = window.document.body
+        //corpo.style.background= '#acacac'
+
+       // window.alert(p1.innerText)
+
+       /* var mensagem = window.document.getElementById('msg')
+
+       mensagem.style.background = '#000'
+
+       mensagem.innerText = 'aqui vou euuuu'*/
+
+       var d = window.document.querySelector('p#msg');
+       d.style.color= 'green'
+
+    </script>
+    
+    
+</body>
+=======
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            padding: 10px;
+            background-color: #000;
+            color: #fff;
+            font: normal 15px arial;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em Javascrit</p>
+    <p id="msg">Clique em mim</p>
+
+    <script>
+       
+        var p1 = window.document.getElementsByTagName('p')[1]
+        window.document.write(p1.innerHTML)
+        
+        //p1.style.color = '#00fc00'
+
+        var corpo = window.document.body
+        //corpo.style.background= '#acacac' 
+
+       // window.alert(p1.innerText)
+
+       /* var mensagem = window.document.getElementById('msg')
+
+       mensagem.style.background = '#000'
+
+       mensagem.innerText = 'aqui vou euuuu'*/
+
+       var d = window.document.querySelector('p#msg');
+       d.style.color= 'green'
+
+    </script>
+    
+    
+</body>
+>>>>>>> 5a3b3e7a3c073cf15a23667fe6d552b185cdb00a
+</html>
