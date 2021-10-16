@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body{
     background-color: rgb(158, 12, 48);
     font: normal 20px Arial;
@@ -23,4 +24,31 @@ select#flista{
 footer{
     color: white;
     text-align: center;
+=======
+body{
+    background-color: rgb(158, 12, 48);
+    font: normal 20px Arial;
+}
+
+header{
+    color: white;
+    text-align: center;
+}
+section{
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.356);
+}
+
+select#flista{
+    width: 150px;
+}
+
+footer{
+    color: white;
+    text-align: center;
+>>>>>>> 5a3b3e7a3c073cf15a23667fe6d552b185cdb00a
 }
