@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+
+    <style>
+        label{
+            display: block;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-bottom: .5rem;
+            margin-top: 1rem;
+        }
+
+        form{
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        input, textarea{
+            width: 100%;
+            box-sizing: border-box;
+            padding: .5rem;
+            border: 2px solid #000;
+            font-size: 1rem;
+            margin-bottom: .5rem;
+        }
+
+        textarea{
+            height: 150px;
+        }
+
+        .invalido {
+            border-color: red;
+        }
+    </style>
+
+    <form name="contato" id="contato">
+        <label for="nome">Nome:</label>
+        <input type="name" name="nome" id="nome" required>
+        <span class="erro"></span>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required> 
+        <span class="erro"></span>   
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea name="mensagem" id="mensagem"></textarea>  
+        
+        <select name="cores" id="cores">
+            <option value="blue">Azul</option>
+            <option value="red">Vermelho</option>
+            <option value="white">Branco</option>
+        </select>
+    </form>
+
+    <script>
+        const contato = document.querySelector('#contato')
+        const dados = {}
+
+        function handleChange(e){
+            const target = e.target
+
+            if(!target.checkValidity()){
+                target.classList.add('invalido');
+                target.nextElementSibling.innerText = target.validationMessage;
+            }else{
+                target.classList.remove('invalido');
+            }
+            console.log(target.checkValidity())
+
+            document.body.style.backgroundColor = e.target.value   
+            // pegando os dados digitados pelo usuário
+            dados[e.target.name] = e.target.value
+        }
+
+        contato.addEventListener('change', handleChange)
+    </script>
+
+</body>
+</html>

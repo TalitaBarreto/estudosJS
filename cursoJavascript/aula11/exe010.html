@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -36,42 +35,3 @@
     </body>
 
 </html>
-=======
-<!DOCTYPE html>
-<html lang="pt-br">
-
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Detra</title>
-    </head>
-
-    <body>
-
-        <h1>Sistema de Multas</h1>
-        Velocidade do carro:<input type="number" name="txtvel" id="txtvel">
-        <input type="button" value="Verificar" onclick="Calcular() ">
-        <div id="res"></div>
-        
-        <script>
-
-            function Calcular() {
-                var txtv = window.document.querySelector('imput#txtvel')
-                var res = window.document.querySelector('div#res')
-                var vel = Number(txtvel.value)
-
-                res.innerHTML = `Sua velocidade atual é de <strong>${vel}Km/h</strong> `
-                if (vel > 60) {
-                    res.innerHTML += `<p>Você está <strong> MULTADOOOOO </strong> por execesso de velocidade</p>`
-                }
-
-                res.innerHTML += `<p>Dirija sempre com cinto de segunrança</p>`
-            }
-
-        </script>
-        
-    </body>
-
-</html> 
->>>>>>> 5a3b3e7a3c073cf15a23667fe6d552b185cdb00a
